@@ -1,0 +1,36 @@
+#[0]
+Word is [are]  :  file count is 1 file(s)  :  file is file1.txt --- word count is 1
+
+#[7]
+Word is [Hi]  :  file count is 2 file(s)  :  file is file1.txt --- word count is 6  :  file is file2.txt --- word count is 1
+
+#[7]
+Word is [hello]  :  file count is 1 file(s)  :  file is file1.txt --- word count is 1
+
+#[7]
+Word is [how]  :  file count is 1 file(s)  :  file is file1.txt --- word count is 1
+
+#[7]
+Word is [Hello]  :  file count is 2 file(s)  :  file is file1.txt --- word count is 2  :  file is file2.txt --- word count is 1
+
+#[8]
+Word is [is]  :  file count is 1 file(s)  :  file is file2.txt --- word count is 1
+
+#[8]
+Word is [inverted]  :  file count is 1 file(s)  :  file is file2.txt --- word count is 1
+
+#[15]
+Word is [project.]  :  file count is 1 file(s)  :  file is file2.txt --- word count is 1
+
+#[18]
+Word is [search]  :  file count is 1 file(s)  :  file is file2.txt --- word count is 1
+
+#[19]
+Word is [this]  :  file count is 1 file(s)  :  file is file2.txt --- word count is 1
+
+#[24]
+Word is [you]  :  file count is 1 file(s)  :  file is file1.txt --- word count is 1
+
+#[63]
+Word is [?]  :  file count is 1 file(s)  :  file is file1.txt --- word count is 1
+

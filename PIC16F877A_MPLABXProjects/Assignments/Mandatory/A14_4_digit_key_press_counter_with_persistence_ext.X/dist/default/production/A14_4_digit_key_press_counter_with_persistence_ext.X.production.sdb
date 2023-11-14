@@ -1,0 +1,258 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\at24c04.c
+[v _eeprom_at24c04_random_read eeprom_at24c04_random_read `(uc  1 e 1 0 ]
+"20
+[v _eeprom_at24c04_byte_write eeprom_at24c04_byte_write `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"10
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\i2c.c
+[v _init_i2c init_i2c `(v  1 e 1 0 ]
+"16
+[v _i2c_wait_for_idle i2c_wait_for_idle `(v  1 s 1 i2c_wait_for_idle ]
+"22
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"28
+[v _i2c_rep_start i2c_rep_start `(v  1 e 1 0 ]
+"35
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"41
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+"65
+[v _i2c_write i2c_write `(i  1 e 2 0 ]
+"26 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"34
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"15
+[v _display display `(v  1 e 1 0 ]
+"166 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2803
+[v _R_nW R_nW `VEb  1 e 0 @1186 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2818
+[v _SSPEN SSPEN `VEb  1 e 0 @165 ]
+"2836
+[v _SSPM3 SSPM3 `VEb  1 e 0 @163 ]
+"20 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\main.c
+[v _count count `ui  1 e 2 0 ]
+"34
+[v _main main `(v  1 e 1 0 ]
+{
+"38
+[v main@digit digit `[10]uc  1 a 10 16 ]
+"37
+[v main@ssd ssd `[4]uc  1 a 4 26 ]
+"41
+[v main@key_inc key_inc `uc  1 a 1 32 ]
+"40
+[v main@wait wait `uc  1 a 1 31 ]
+"42
+[v main@key_lp key_lp `uc  1 a 1 30 ]
+"37
+[v main@F877 F877 `[10]uc  1 s 10 F877 ]
+"91
+} 0
+"10 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\digital_keypad.c
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+{
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+"12
+[v read_digital_keypad@once once `uc  1 s 1 once ]
+"14
+[v read_digital_keypad@mode mode `uc  1 a 1 1 ]
+"32
+} 0
+"26 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"32
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"13
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\i2c.c
+[v _init_i2c init_i2c `(v  1 e 1 0 ]
+{
+[v init_i2c@baud baud `ul  1 p 4 0 ]
+"14
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"8
+} 0
+"5 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\at24c04.c
+[v _eeprom_at24c04_random_read eeprom_at24c04_random_read `(uc  1 e 1 0 ]
+{
+[v eeprom_at24c04_random_read@memory_loc memory_loc `uc  1 a 1 wreg ]
+"7
+[v eeprom_at24c04_random_read@received_data received_data `uc  1 a 1 3 ]
+"5
+[v eeprom_at24c04_random_read@memory_loc memory_loc `uc  1 a 1 wreg ]
+[v eeprom_at24c04_random_read@memory_loc memory_loc `uc  1 a 1 2 ]
+"18
+} 0
+"28 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\i2c.c
+[v _i2c_rep_start i2c_rep_start `(v  1 e 1 0 ]
+{
+"33
+} 0
+"41
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+[v i2c_read@ack ack `uc  1 a 1 wreg ]
+"43
+[v i2c_read@data data `uc  1 a 1 1 ]
+"41
+[v i2c_read@ack ack `uc  1 a 1 wreg ]
+"45
+[v i2c_read@ack ack `uc  1 a 1 0 ]
+"63
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 8 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
+"53
+} 0
+"20 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\at24c04.c
+[v _eeprom_at24c04_byte_write eeprom_at24c04_byte_write `(v  1 e 1 0 ]
+{
+[v eeprom_at24c04_byte_write@memory_loc memory_loc `uc  1 a 1 wreg ]
+[v eeprom_at24c04_byte_write@memory_loc memory_loc `uc  1 a 1 wreg ]
+[v eeprom_at24c04_byte_write@data data `uc  1 p 1 0 ]
+"22
+[v eeprom_at24c04_byte_write@memory_loc memory_loc `uc  1 a 1 3 ]
+"29
+} 0
+"65 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\i2c.c
+[v _i2c_write i2c_write `(i  1 e 2 0 ]
+{
+[v i2c_write@data data `uc  1 a 1 wreg ]
+[v i2c_write@data data `uc  1 a 1 wreg ]
+"67
+[v i2c_write@data data `uc  1 a 1 0 ]
+"71
+} 0
+"35
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"39
+} 0
+"22
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"26
+} 0
+"16
+[v _i2c_wait_for_idle i2c_wait_for_idle `(v  1 s 1 i2c_wait_for_idle ]
+{
+"20
+} 0
+"15 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A14_4_digit_key_press_counter_with_persistence_ext.X\ssd.c
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@data data `*.4uc  1 a 1 wreg ]
+"24
+[v display@wait wait `ul  1 a 4 4 ]
+"17
+[v display@digit digit `uc  1 a 1 9 ]
+"15
+[v display@data data `*.4uc  1 a 1 wreg ]
+"19
+[v display@data data `*.4uc  1 a 1 8 ]
+"26
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0

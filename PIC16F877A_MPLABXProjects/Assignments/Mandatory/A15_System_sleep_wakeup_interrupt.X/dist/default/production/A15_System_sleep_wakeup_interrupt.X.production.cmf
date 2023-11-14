@@ -1,0 +1,400 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 C C 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+$dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+cinit CODE 0 F F 18 2 1
+text1 CODE 0 115 115 19 2 1
+text2 CODE 0 159 159 A 2 1
+text3 CODE 0 14D 14D C 2 1
+text4 CODE 0 163 163 5 2 1
+text5 CODE 0 27 27 5A 2 1
+text6 CODE 0 CB CB 4A 2 1
+maintext CODE 0 81 81 4A 2 1
+cstackCOMMON COMMON 1 70 70 8 1 1
+cstackBANK0 BANK0 1 20 20 18 1 1
+inittext CODE 0 12E 12E 13 2 1
+intentry CODE 0 4 4 8 2 1
+bssBANK0 BANK0 1 44 44 4 1 1
+idataBANK0 CODE 0 141 141 C 2 1
+dataBANK0 BANK0 1 38 38 C 1 1
+bssCOMMON COMMON 1 78 78 2 1 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 48-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 48-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 168-1FFF 2
+ENTRY 3-3 2
+ENTRY 168-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-3 2
+CODE 168-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 168-1FFF 2
+STRING 3-3 2
+STRING 168-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+F cinit CODE >889:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+F cinit CODE >892:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+F cinit CODE >954:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+10 cinit CODE >955:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+11 cinit CODE >956:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+12 cinit CODE >957:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13 cinit CODE >958:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+14 cinit CODE >959:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+15 cinit CODE >960:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+16 cinit CODE >961:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+17 cinit CODE >962:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+18 cinit CODE >963:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+1D cinit CODE >967:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+1E cinit CODE >968:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+1F cinit CODE >969:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+20 cinit CODE >970:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+21 cinit CODE >973:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+22 cinit CODE >974:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+23 cinit CODE >980:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+23 cinit CODE >982:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+24 cinit CODE >983:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+4 intentry CODE >8:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+CB text6 CODE >8:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+CB text6 CODE >13:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+CF text6 CODE >15:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+D4 text6 CODE >17:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+D6 text6 CODE >17:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+DD text6 CODE >17:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+E3 text6 CODE >19:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+E5 text6 CODE >20:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+E7 text6 CODE >20:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+EB text6 CODE >22:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+F1 text6 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+F3 text6 CODE >25:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+F5 text6 CODE >25:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+F7 text6 CODE >25:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+FF text6 CODE >29:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+100 text6 CODE >32:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+104 text6 CODE >34:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+10A text6 CODE >35:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+10C text6 CODE >36:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+10D text6 CODE >38:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+10E text6 CODE >40:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\isr.c
+27 text5 CODE >15:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+2A text5 CODE >19:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+2B text5 CODE >21:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+33 text5 CODE >22:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+37 text5 CODE >22:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+3A text5 CODE >22:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+40 text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+55 text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+5B text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+61 text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+67 text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+6A text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+6D text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+74 text5 CODE >25:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+7C text5 CODE >25:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+80 text5 CODE >26:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+163 text4 CODE >3:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\external_interrupt.c
+163 text4 CODE >6:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\external_interrupt.c
+166 text4 CODE >8:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\external_interrupt.c
+167 text4 CODE >9:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\external_interrupt.c
+14D text3 CODE >4:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+14D text3 CODE >7:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+150 text3 CODE >10:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+153 text3 CODE >12:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+158 text3 CODE >13:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\ssd.c
+159 text2 CODE >3:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+159 text2 CODE >5:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+15C text2 CODE >7:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+15D text2 CODE >9:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+161 text2 CODE >11:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+162 text2 CODE >12:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\timers.c
+115 text1 CODE >28:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+115 text1 CODE >30:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+119 text1 CODE >31:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+11D text1 CODE >33:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+122 text1 CODE >34:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+127 text1 CODE >35:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+12C text1 CODE >37:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+12D text1 CODE >38:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+81 maintext CODE >40:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+81 maintext CODE >44:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+98 maintext CODE >47:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+9D maintext CODE >51:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+A2 maintext CODE >51:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+A4 maintext CODE >51:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+A8 maintext CODE >54:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+AA maintext CODE >55:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+AC maintext CODE >56:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+AE maintext CODE >57:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+B0 maintext CODE >59:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+B6 maintext CODE >60:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+B7 maintext CODE >63:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+B9 maintext CODE >64:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+C3 maintext CODE >65:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+C6 maintext CODE >66:C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A15_System_sleep_wakeup_interrupt.X\main.c
+12E inittext CODE >928:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+12E inittext CODE >929:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+12F inittext CODE >930:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+130 inittext CODE >931:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+131 inittext CODE >932:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+132 inittext CODE >939:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+132 inittext CODE >940:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+137 inittext CODE >941:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+138 inittext CODE >942:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+139 inittext CODE >943:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13A inittext CODE >944:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13B inittext CODE >945:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13C inittext CODE >946:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13D inittext CODE >947:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13E inittext CODE >948:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+13F inittext CODE >949:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+140 inittext CODE >950:C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 168 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_led_state 44 0 BANK0 1 bssBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__end_of_init_ext_int 2D0 0 CODE 0 text4 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_toggle_flag 42 0 BANK0 1 dataBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_INTE 5C 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_INTF 59 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_T0CS 40D 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+_main 102 0 CODE 0 maintext dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+start 18 0 CODE 0 init C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_init_ssd 29A 0 CODE 0 text3 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_init_ssd 2B2 0 CODE 0 text3 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_display 4E 0 CODE 0 text5 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+main@ssd 34 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_INTEDG 40E 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+___stacklo 0 0 ABS 0 - C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+_init_config 22A 0 CODE 0 text1 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TMR0IE 5D 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TMR0IF 5A 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 4E 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+_init_timer0 2B2 0 CODE 0 text2 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_PSA 40B 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__S0 168 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 196 0 CODE 0 text6 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_sec 46 0 BANK0 1 bssBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__end_of_isr 22A 0 CODE 0 text6 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ASUS\AppData\Local\Temp\xcAs9jc.o
+__pdataBANK0 38 0 BANK0 1 dataBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pmaintext 102 0 CODE 0 maintext dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+main@F861 38 0 BANK0 1 dataBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+main@digit 2A 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__end_of_init_config 25C 0 CODE 0 text1 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+init_fetch0 25C 0 CODE 0 inittext dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 46 0 CODE 0 cinit dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+isr@count 78 0 COMMON 1 bssCOMMON dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 22A 0 CODE 0 text1 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__ptext2 2B2 0 CODE 0 text2 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__ptext3 29A 0 CODE 0 text3 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__ptext4 2C6 0 CODE 0 text4 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__ptext5 4E 0 CODE 0 text5 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__ptext6 196 0 CODE 0 text6 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of_init_timer0 2C6 0 CODE 0 text2 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__end_of__initialization 46 0 CODE 0 cinit dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+display@digit 25 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display 102 0 CODE 0 text5 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__pidataBANK0 282 0 CODE 0 idataBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_init_ext_int 2C6 0 CODE 0 text4 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 264 0 CODE 0 inittext dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+display@data 24 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+display@wait 20 0 BANK0 1 cstackBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__end_of_main 196 0 CODE 0 maintext dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+__pbssBANK0 44 0 BANK0 1 bssBANK0 dist/default/production\A15_System_sleep_wakeup_interrupt.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 28 1
+intentry 0 4 8 164 2
+reset_vec 0 0 0 3 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

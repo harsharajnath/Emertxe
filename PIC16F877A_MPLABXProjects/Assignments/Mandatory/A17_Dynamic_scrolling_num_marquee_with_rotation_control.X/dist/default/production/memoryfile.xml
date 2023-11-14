@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>1297</used>
+      <free>6895</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>108</used>
+      <free>260</free>
+    </memory>
+  </executable>
+</project>

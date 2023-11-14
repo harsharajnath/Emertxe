@@ -1,0 +1,208 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"10
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+"23 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"32
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"15
+[v _display display `(v  1 e 1 0 ]
+[s S94 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[s S102 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S106 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S110 . 1 `S94 1 . 1 0 `S102 1 . 1 0 `S106 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES110  1 e 1 @3 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S131 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S140 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S145 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES145  1 e 1 @11 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2316
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+[s S74 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S81 . 1 `S74 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES81  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"17 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\main.c
+[v _count count `ui  1 e 2 0 ]
+"32
+[v _main main `(v  1 e 1 0 ]
+{
+"36
+[v main@digit digit `[10]uc  1 a 10 7 ]
+"35
+[v main@ssd ssd `[4]uc  1 a 4 17 ]
+"38
+[v main@wait wait `uc  1 a 1 22 ]
+"39
+[v main@key key `uc  1 a 1 21 ]
+"35
+[v main@F860 F860 `[10]uc  1 s 10 F860 ]
+"73
+} 0
+"10 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\digital_keypad.c
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+{
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+"12
+[v read_digital_keypad@once once `uc  1 s 1 once ]
+"14
+[v read_digital_keypad@mode mode `uc  1 a 1 1 ]
+"32
+} 0
+"23 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"30
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"13
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"8
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 1 ]
+"19
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 2 ]
+"9
+} 0
+"15 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A13_Self_counter_SSD_EEPROM.X\ssd.c
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@data data `*.4uc  1 a 1 wreg ]
+"24
+[v display@wait wait `ul  1 a 4 4 ]
+"17
+[v display@digit digit `uc  1 a 1 9 ]
+"15
+[v display@data data `*.4uc  1 a 1 wreg ]
+"19
+[v display@data data `*.4uc  1 a 1 8 ]
+"26
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0

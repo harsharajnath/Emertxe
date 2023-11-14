@@ -1,0 +1,33 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"13 C:\Users\ASUS\MPLABXProjects\Class_sessions\02_LED_blink_PORTD.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"73
+[v _main main `(v  1 e 1 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"73 C:\Users\ASUS\MPLABXProjects\Class_sessions\02_LED_blink_PORTD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"76
+[v main@wait wait `ul  1 a 4 4 ]
+"85
+} 0
+"13
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"17
+} 0

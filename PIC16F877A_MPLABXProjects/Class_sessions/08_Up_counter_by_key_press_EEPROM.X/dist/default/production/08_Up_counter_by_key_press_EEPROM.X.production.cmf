@@ -1,0 +1,495 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+cinit CODE 0 7E8 7E8 18 2 1
+text1 CODE 0 595 595 2A 2 1
+text2 CODE 0 554 554 B 2 1
+text3 CODE 0 55F 55F C 2 1
+text4 CODE 0 544 544 6 2 1
+text5 CODE 0 5EC 5EC 32 2 1
+text6 CODE 0 5BF 5BF 2D 2 1
+text7 CODE 0 57E 57E 17 2 1
+text8 CODE 0 61E 61E 56 2 1
+text9 CODE 0 674 674 59 2 1
+nvCOMMON COMMON 1 7C 7C 1 1 1
+text10 CODE 0 6CD 6CD 69 2 1
+idataCOMMON CODE 0 543 543 1 2 1
+maintext CODE 0 736 736 B2 2 1
+cstackCOMMON COMMON 1 70 70 C 1 1
+cstackBANK0 BANK0 1 20 20 17 1 1
+inittext CODE 0 56B 56B 13 2 1
+idataBANK0 CODE 0 54A 54A A 2 1
+dataBANK0 BANK0 1 37 37 A 1 1
+dataCOMMON COMMON 1 7D 7D 1 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 41-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 41-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-542 2
+CONST 800-1FFF 2
+ENTRY 3-542 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-542 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-542 2
+STRCODE 800-1FFF 2
+STRING 3-542 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+7E8 cinit CODE >891:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7E8 cinit CODE >894:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7E8 cinit CODE >943:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7E9 cinit CODE >944:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7EA cinit CODE >945:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7EB cinit CODE >946:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7EC cinit CODE >947:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7ED cinit CODE >948:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7EE cinit CODE >949:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7EF cinit CODE >950:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7F0 cinit CODE >951:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7F1 cinit CODE >952:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7F6 cinit CODE >956:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7FB cinit CODE >957:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7FC cinit CODE >963:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7FC cinit CODE >965:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+7FD cinit CODE >966:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+6CD text10 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6CD text10 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6D0 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6D4 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6D7 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6D9 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6DB text10 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6DF text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6E2 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6E4 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6E8 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6EA text10 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6F0 text10 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6F2 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6F3 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6F4 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6F8 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6FA text10 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+6FE text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+702 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+703 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+707 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+709 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+70B text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+70F text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+713 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+716 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+719 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+71A text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+71B text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+71F text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+721 text10 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+727 text10 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+72C text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+72F text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+731 text10 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+735 text10 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+674 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+674 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+675 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+679 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+67C text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+67E text9 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+680 text9 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+684 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+687 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+689 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+68F text9 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+691 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+692 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+693 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+697 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+699 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+69D text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6A1 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6A3 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6A7 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6AB text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6AE text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6B1 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6B2 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6B6 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6B8 text9 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6BE text9 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6C3 text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6C6 text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6C8 text9 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+6CC text9 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+61E text8 CODE >15:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+61F text8 CODE >19:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+620 text8 CODE >21:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+62A text8 CODE >22:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+62E text8 CODE >22:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+631 text8 CODE >22:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+637 text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+64A text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+650 text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+656 text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+65C text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+65F text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+662 text8 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+669 text8 CODE >25:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+66F text8 CODE >25:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+673 text8 CODE >26:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+57E text7 CODE >6:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+57F text7 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+57F text7 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+586 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+594 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeread.c
+5BF text6 CODE >6:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eewrite.c
+5C0 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eewrite.c
+5EB text6 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eewrite.c
+5EC text5 CODE >19:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+5ED text5 CODE >21:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+5F3 text5 CODE >23:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+5FB text5 CODE >24:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+5FC text5 CODE >25:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+602 text5 CODE >27:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+609 text5 CODE >28:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+60A text5 CODE >29:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+610 text5 CODE >31:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+61A text5 CODE >32:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+61C text5 CODE >33:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+61C text5 CODE >35:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+61D text5 CODE >36:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+544 text4 CODE >4:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+544 text4 CODE >7:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+549 text4 CODE >8:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+55F text3 CODE >4:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+55F text3 CODE >7:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+562 text3 CODE >10:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+565 text3 CODE >12:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+56A text3 CODE >13:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\ssd.c
+554 text2 CODE >13:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+554 text2 CODE >15:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+559 text2 CODE >16:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+55E text2 CODE >17:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+595 text1 CODE >10:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+596 text1 CODE >14:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+59B text1 CODE >16:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5A0 text1 CODE >20:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5B0 text1 CODE >22:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5B2 text1 CODE >26:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5BB text1 CODE >28:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5BD text1 CODE >31:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+5BE text1 CODE >32:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\digital_keypad.c
+736 maintext CODE >38:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+736 maintext CODE >45:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+74D maintext CODE >48:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+752 maintext CODE >52:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+75B maintext CODE >53:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+762 maintext CODE >55:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+77C maintext CODE >56:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+7A1 maintext CODE >57:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+7C6 maintext CODE >58:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+7DE maintext CODE >60:C:\Users\ASUS\MPLABXProjects\Class_sessions\08_Up_counter_by_key_press_EEPROM.X\main.c
+56B inittext CODE >917:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56B inittext CODE >918:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56C inittext CODE >919:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56D inittext CODE >920:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56E inittext CODE >921:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56F inittext CODE >928:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+56F inittext CODE >929:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+574 inittext CODE >930:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+575 inittext CODE >931:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+576 inittext CODE >932:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+577 inittext CODE >933:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+578 inittext CODE >934:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+579 inittext CODE >935:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+57A inittext CODE >936:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+57B inittext CODE >937:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+57C inittext CODE >938:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+57D inittext CODE >939:C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+_main E6C 0 CODE 0 maintext dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+start 0 0 CODE 0 init C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_init_digital_keypad A94 0 CODE 0 text4 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+read_digital_keypad@mode 71 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+read_digital_keypad@once 7D 0 COMMON 1 dataCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+_init_ssd ABE 0 CODE 0 text3 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_init_ssd AD6 0 CODE 0 text3 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pidataCOMMON A86 0 CODE 0 idataCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+eeprom_test@key 74 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awdiv@dividend 79 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_EECON1bits 18C 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_display C3C 0 CODE 0 text8 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_EECON1 18C 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+main@key 36 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+main@ssd 32 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of___awdiv E6C 0 CODE 0 text10 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of___awmod D9A 0 CODE 0 text9 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+eeprom_write@addr 72 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+___stacklo 0 0 ABS 0 - C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+_init_config AA8 0 CODE 0 text2 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_eeprom_read AFC 0 CODE 0 text7 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_eeprom_test BD8 0 CODE 0 text5 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+start_initialization FD0 0 CODE 0 cinit dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+_read_digital_keypad B2A 0 CODE 0 text1 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FD0 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__pnvCOMMON 7C 0 COMMON 1 nvCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+eeprom_write@value 70 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ASUS\AppData\Local\Temp\xcAs9ok.o
+_eeprom_write B7E 0 CODE 0 text6 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pdataBANK0 37 0 BANK0 1 dataBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of_read_digital_keypad B7E 0 CODE 0 text1 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext10 D9A 0 CODE 0 text10 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awdiv D9A 0 CODE 0 text10 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awmod CE8 0 CODE 0 text9 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pmaintext E6C 0 CODE 0 maintext dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+main@F863 37 0 BANK0 1 dataBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+main@digit 28 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of_init_config ABE 0 CODE 0 text2 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of_eeprom_read B2A 0 CODE 0 text7 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of_eeprom_test C3C 0 CODE 0 text5 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 AD6 0 CODE 0 inittext dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_eeprom_write BD8 0 CODE 0 text6 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+?___awdiv 77 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext1 B2A 0 CODE 0 text1 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext2 AA8 0 CODE 0 text2 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext3 ABE 0 CODE 0 text3 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext4 A88 0 CODE 0 text4 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext5 BD8 0 CODE 0 text5 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext6 B7E 0 CODE 0 text6 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext7 AFC 0 CODE 0 text7 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext8 C3C 0 CODE 0 text8 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__ptext9 CE8 0 CODE 0 text9 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+display@digit 79 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display CE8 0 CODE 0 text8 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pidataBANK0 A94 0 CODE 0 idataBANK0 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 ADE 0 CODE 0 inittext dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+display@data 78 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+display@wait 74 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_init_digital_keypad A88 0 CODE 0 text4 dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__end_of_main FD0 0 CODE 0 maintext dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_count 7C 0 COMMON 1 nvCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+eeprom_read@addr 71 0 COMMON 1 cstackCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FD0 0 CODE 0 cinit dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+__pdataCOMMON 7D 0 COMMON 1 dataCOMMON dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production\08_Up_counter_by_key_press_EEPROM.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E8 FD0 18 2
+text1 0 595 B2A 2A 2
+text2 0 554 AA8 B 2
+text3 0 55F ABE C 2
+text4 0 544 A88 6 2
+text5 0 5EC BD8 32 2
+text6 0 5BF B7E 2D 2
+text7 0 57E AFC 17 2
+text8 0 61E C3C 56 2
+text9 0 674 CE8 59 2
+text10 0 6CD D9A 69 2
+idataCOMMON 0 543 A86 1 2
+maintext 0 736 E6C B2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 21 1
+inittext 0 56B AD6 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 54A A94 A 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

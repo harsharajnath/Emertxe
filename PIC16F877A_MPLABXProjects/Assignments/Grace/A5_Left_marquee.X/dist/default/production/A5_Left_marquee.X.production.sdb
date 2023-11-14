@@ -1,0 +1,81 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"20 C:\Users\ASUS\MPLABXProjects\Assignments\Grace\A5_Left_marquee.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"25
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Grace\A5_Left_marquee.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"15
+[v _display display `(v  1 e 1 0 ]
+"166 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"25 C:\Users\ASUS\MPLABXProjects\Assignments\Grace\A5_Left_marquee.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"29
+[v main@digit digit `[12]uc  1 a 12 0 ]
+"28
+[v main@ssd ssd `[4]uc  1 a 4 12 ]
+"31
+[v main@i i `uc  1 a 1 17 ]
+"32
+[v main@wait wait `uc  1 a 1 16 ]
+"28
+[v main@F856 F856 `[12]uc  1 s 12 F856 ]
+"57
+} 0
+"20
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"23
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Grace\A5_Left_marquee.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"13
+} 0
+"15
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@data data `*.4uc  1 a 1 wreg ]
+"24
+[v display@wait wait `ul  1 a 4 4 ]
+"17
+[v display@digit digit `uc  1 a 1 9 ]
+"15
+[v display@data data `*.4uc  1 a 1 wreg ]
+"19
+[v display@data data `*.4uc  1 a 1 8 ]
+"26
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0

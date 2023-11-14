@@ -1,0 +1,179 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\clcd.c
+[v _clcd_write clcd_write `(v  1 e 1 0 ]
+"21
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+"44
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+"56
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+"62
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+"23 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"29
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\matrix_keypad.c
+[v _init_matrix_keypad init_matrix_keypad `(v  1 e 1 0 ]
+"24
+[v _scan_keypad scan_keypad `(uc  1 s 1 scan_keypad ]
+"111
+[v _read_matrix_keypad read_matrix_keypad `(uc  1 e 1 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2674
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2680
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2776
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2779
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"3010
+[v _TRISE1 TRISE1 `VEb  1 e 0 @1097 ]
+"3013
+[v _TRISE2 TRISE2 `VEb  1 e 0 @1098 ]
+"3079
+[v _nRBPU nRBPU `VEb  1 e 0 @1039 ]
+"17 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\main.c
+[v _pos pos `uc  1 e 1 0 ]
+"29
+[v _main main `(v  1 e 1 0 ]
+{
+"225
+[v main@i_94 i `i  1 a 2 50 ]
+"206
+[v main@j_93 j `ui  1 a 2 18 ]
+"198
+[v main@i_92 i `ui  1 a 2 48 ]
+"188
+[v main@j j `ui  1 a 2 16 ]
+"180
+[v main@i_90 i `ui  1 a 2 46 ]
+"135
+[v main@i i `i  1 a 2 44 ]
+"37
+[v main@msg msg `[16]uc  1 a 16 20 ]
+"38
+[v main@msg_buffer msg_buffer `[16]uc  1 a 16 0 ]
+"35
+[v main@num num `i  1 a 2 56 ]
+"36
+[v main@index index `us  1 a 2 52 ]
+"43
+[v main@pause_flag pause_flag `us  1 a 2 40 ]
+"42
+[v main@edit_mode_flag edit_mode_flag `us  1 a 2 38 ]
+"44
+[v main@first_iter_flag first_iter_flag `us  1 a 2 36 ]
+"32
+[v main@key_copy key_copy `uc  1 a 1 55 ]
+[v main@key key `uc  1 a 1 54 ]
+"34
+[v main@prev_direction prev_direction `uc  1 a 1 43 ]
+"33
+[v main@temp temp `uc  1 a 1 42 ]
+"36
+[v main@F872 F872 `[16]uc  1 s 16 F872 ]
+"37
+[v main@F874 F874 `[16]uc  1 s 16 F874 ]
+"45
+[v main@toggle_cursor toggle_cursor `uc  1 s 1 toggle_cursor ]
+"46
+[v main@blink_delay blink_delay `ui  1 s 2 blink_delay ]
+"245
+} 0
+"111 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\matrix_keypad.c
+[v _read_matrix_keypad read_matrix_keypad `(uc  1 e 1 0 ]
+{
+[v read_matrix_keypad@mode mode `uc  1 a 1 wreg ]
+"114
+[v read_matrix_keypad@key key `uc  1 a 1 3 ]
+"111
+[v read_matrix_keypad@mode mode `uc  1 a 1 wreg ]
+"113
+[v read_matrix_keypad@once once `uc  1 s 1 once ]
+"116
+[v read_matrix_keypad@mode mode `uc  1 a 1 2 ]
+"137
+} 0
+"24
+[v _scan_keypad scan_keypad `(uc  1 s 1 scan_keypad ]
+{
+"26
+[v scan_keypad@i i `i  1 a 2 0 ]
+"109
+} 0
+"23 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"27
+} 0
+"4 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\matrix_keypad.c
+[v _init_matrix_keypad init_matrix_keypad `(v  1 e 1 0 ]
+{
+"22
+} 0
+"44 C:\Users\ASUS\MPLABXProjects\Assignments\Mandatory\A17_Dynamic_scrolling_num_marquee_with_rotation_control.X\clcd.c
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+{
+"54
+} 0
+"21
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+{
+"42
+} 0
+"56
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+{
+[v clcd_putch@data data `DCuc  1 a 1 wreg ]
+[v clcd_putch@data data `DCuc  1 a 1 wreg ]
+[v clcd_putch@addr addr `uc  1 p 1 4 ]
+"58
+[v clcd_putch@data data `DCuc  1 a 1 5 ]
+"60
+} 0
+"62
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+{
+[v clcd_print@str str `*.26DCuc  1 p 2 4 ]
+[v clcd_print@addr addr `uc  1 p 1 6 ]
+"71
+} 0
+"4
+[v _clcd_write clcd_write `(v  1 e 1 0 ]
+{
+[v clcd_write@byte byte `uc  1 a 1 wreg ]
+[v clcd_write@byte byte `uc  1 a 1 wreg ]
+[v clcd_write@mode mode `uc  1 p 1 0 ]
+"6
+[v clcd_write@byte byte `uc  1 a 1 3 ]
+"19
+} 0
